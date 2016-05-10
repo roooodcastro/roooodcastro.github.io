@@ -20,5 +20,72 @@ h1 {
 }
 
 img.logo {
-    height: 80vh;
+    height: 70vh;
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        height: 80px;
+        line-height: 80px;
+    }
+
+    .navbar-nav>li>a {
+        line-height: 60px;
+        padding: 10px 50px;
+        font-size: 16px;
+        font-weight: bold;
+        /*letter-spacing: 3px;*/
+    }
+
+    .navbar-nav {
+        position: absolute;
+    }
+
+    .navbar-default {
+        border: none;
+        border-radius: 0;
+    }
+
+    .navbar-nav.left {
+        right: 50%;
+        margin-right: 50px;
+    }
+
+    .navbar-nav.right {
+        left: 50%;
+        margin-left: 50px;
+    }
+
+    .navbar>.container-fluid .navbar-brand {
+        float: none;
+        position: absolute;
+        display: inline-block;
+        left: 50%;
+        top: 15px;
+        padding: 0;
+        margin-left: -40px;
+        text-align: center;
+        width: 80px;
+        height: 80px;
+        background-color: #DDDDDD;
+        border-radius: 40px;
+        border: 5px solid #F8F8F8;
+    }
+
+    a.navbar-brand img {
+        padding: 5px;
+        width: 70px;
+        height: 70px;
+    }
+
+    .navbar-default .navbar-collapse { text-align: center; }
+
+    .navbar-nav { float: none; display: inline-block; }
+}
+
+@media (max-width: 767px) {
+    a.navbar-brand img {
+        display: none;
+        float: left;
+    }
 }
