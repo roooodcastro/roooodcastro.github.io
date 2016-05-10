@@ -85,7 +85,6 @@ img.logo {
 
 @media (max-width: 767px) {
     a.navbar-brand img {
-        display: none;
-        float: left;
+        height: 20px;
     }
 }
