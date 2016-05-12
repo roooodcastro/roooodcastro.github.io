@@ -1,0 +1,44 @@
+---
+---
+@charset "utf-8";
+
+@import "../_sass/colors";
+@import "../_sass/navbar";
+@import "../_sass/fonts";
+
+html { height: 100%; }
+
+body {
+  background-color: $COLOR_LIGHT_GRAY;
+}
+
+h1 {
+  font-family: Oswald;
+  color: #8C8C8C;
+  font-size: 6vh;
+  margin: 4vh 0;
+}
+
+img.logo {
+  height: 70vh;
+}
+
+.container {
+  background-color: white;
+  -webkit-box-shadow: 0 0 20px 0 rgba($COLOR_GRAY, 0.1);
+  -moz-box-shadow: 0 0 20px 0 rgba($COLOR_GRAY, 0.1);
+  box-shadow: 0 0 20px 0 rgba($COLOR_GRAY, 0.1);
+  margin-top: -20px;
+}
+
+@media (min-width: 768px) {
+  .container { margin-top: 0; }
+}
+
+#groupSalas path {
+  &:hover {
+    fill: darken(#BEBEBE, 10%) !important;
+    stroke: black !important;
+    stroke-width: 2px !important;
+  }
+}

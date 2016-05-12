@@ -1,0 +1,64 @@
+@media (min-width: 768px) {
+  .navbar {
+    height: 80px;
+    line-height: 80px;
+  }
+
+  .navbar-default .navbar-nav>li>a {
+    color: $COLOR_LIGHT_GRAY;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 60px;
+    padding: 10px 50px;
+    transition: all 0.2s ease;
+    /*letter-spacing: 3px;*/
+    &:hover {
+      background-color: darken($COLOR_SECONDARY, 2%);
+      color: $COLOR_LIGHT_GRAY;
+    }
+  }
+
+  .navbar-nav {
+    display: inline-block;
+    float: none;
+    position: absolute;
+  }
+
+  .navbar-nav.left { right: 50%; margin-right: 50px; }
+  .navbar-nav.right { left: 50%; margin-left: 50px; }
+
+  .navbar-default {
+    border: none;
+    border-radius: 0;
+    background-color: $COLOR_PRIMARY;
+    .navbar-collapse { text-align: center; }
+  }
+
+  .navbar>.container-fluid .navbar-brand {
+    float: none;
+    position: absolute;
+    display: inline-block;
+    left: 50%;
+    top: 5px;
+    padding: 0;
+    margin-left: -50px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50px;
+    border: 5px solid $COLOR_PRIMARY;
+    transition: all 0.3s ease;
+    &:hover { border-color: darken($COLOR_SECONDARY, 2%); }
+  }
+
+  a.navbar-brand img {
+    padding: 5px;
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 767px) {
+  a.navbar-brand img { height: 20px; }
+}
