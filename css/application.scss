@@ -5,6 +5,7 @@
 @import "../_sass/colors";
 @import "../_sass/navbar";
 @import "../_sass/fonts";
+@import "../_sass/_about.scss";
 
 html { height: 100%; }
 
@@ -13,10 +14,16 @@ body {
 }
 
 h1 {
-  font-family: Oswald;
+  font-family: Oswald, Helvetica Neue, Helvetica, sans-serif;
+  font-weight: 300;
   color: #8C8C8C;
   font-size: 6vh;
   margin: 4vh 0;
+}
+
+hr {
+  border-color: darken($COLOR_LIGHT_GRAY, 20%);
+  margin: 20px;
 }
 
 img.logo {
@@ -29,6 +36,7 @@ img.logo {
   -moz-box-shadow: 0 0 20px 0 rgba($COLOR_GRAY, 0.1);
   box-shadow: 0 0 20px 0 rgba($COLOR_GRAY, 0.1);
   margin-top: -20px;
+  padding: 20px;
 }
 
 @media (min-width: 768px) {

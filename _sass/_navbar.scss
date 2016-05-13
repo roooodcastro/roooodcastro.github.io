@@ -1,19 +1,20 @@
 @media (min-width: 768px) {
   .navbar {
-    height: 80px;
-    line-height: 80px;
+    height: 200px;
+    line-height: 200px;
   }
 
   .navbar-default .navbar-nav>li>a {
     color: $COLOR_LIGHT_GRAY;
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 60px;
-    padding: 10px 50px;
+    font-family: Oswald, Helvetica Neue, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 28px;
+    line-height: 170px;
+    padding: 10px 40px;
     transition: all 0.2s ease;
     /*letter-spacing: 3px;*/
     &:hover {
-      background-color: darken($COLOR_SECONDARY, 2%);
+      background-color: rgba(darken($COLOR_SECONDARY, 2%), 0.6);
       color: $COLOR_LIGHT_GRAY;
     }
   }
@@ -24,14 +25,32 @@
     position: absolute;
   }
 
-  .navbar-nav.left { right: 50%; margin-right: 50px; }
-  .navbar-nav.right { left: 50%; margin-left: 50px; }
+  .navbar-nav.left { right: 50%; margin-right: 80px; }
+  .navbar-nav.right { left: 50%; margin-left: 80px; }
 
   .navbar-default {
     border: none;
     border-radius: 0;
-    background-color: $COLOR_PRIMARY;
+    background: transparent;
+    border-bottom: 10px solid $COLOR_PRIMARY;
     .navbar-collapse { text-align: center; }
+    .background {
+      position: absolute;
+      bottom: 0;
+      left: -20px;
+      right: 0;
+      top: -70px;
+      overflow: hidden;
+      div {
+        width: 105%;
+        height: 105%;
+        background-image: url("/images/main_background.jpg");
+        background-size: cover;
+        background-position: center 0;
+        filter: blur(10px) grayscale(66%);
+        -webkit-filter: blur(10px) grayscale(66%);
+      }
+    }
   }
 
   .navbar>.container-fluid .navbar-brand {
@@ -39,23 +58,23 @@
     position: absolute;
     display: inline-block;
     left: 50%;
-    top: 5px;
+    top: 65px;
     padding: 0;
-    margin-left: -50px;
+    margin-left: -75px;
     text-align: center;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     background-color: white;
-    border-radius: 50px;
-    border: 5px solid $COLOR_PRIMARY;
-    transition: all 0.3s ease;
+    border-radius: 75px;
+    border: 10px solid $COLOR_PRIMARY;
+    transition: background-color, border-color 0.3s ease;
     &:hover { border-color: darken($COLOR_SECONDARY, 2%); }
   }
 
   a.navbar-brand img {
     padding: 5px;
-    width: 90px;
-    height: 90px;
+    width: 130px;
+    height: 130px;
   }
 }
 
