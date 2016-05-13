@@ -61,3 +61,26 @@ div.technologies {
 div.profile-description p {
   font-size: 1.2em;
 }
+
+@media (max-width: 767px) {
+  dl.dl-horizontal {
+    border-left: none;
+    border-top: 1px solid darken($COLOR_LIGHT_GRAY, 20%);
+    padding-top: 30px;
+    dt {
+      text-align: left;
+      height: 30px;
+      padding: 0;
+      vertical-align: middle;
+      width: 180px;
+      span { height: 30px; line-height: 30px; }
+      i { position: relative; top: 5px; }
+    }
+    dd {
+      display: block;
+      line-height: 30px;
+      margin-left: 70px;
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -17,6 +17,7 @@
       background-color: rgba(darken($COLOR_SECONDARY, 2%), 0.6);
       color: $COLOR_LIGHT_GRAY;
     }
+    i { display: none; }
   }
 
   .navbar-nav {
@@ -69,6 +70,7 @@
     border: 10px solid $COLOR_PRIMARY;
     transition: background-color, border-color 0.3s ease;
     &:hover { border-color: darken($COLOR_SECONDARY, 2%); }
+    span { display: none; }
   }
 
   a.navbar-brand img {
@@ -79,5 +81,65 @@
 }
 
 @media (max-width: 767px) {
-  a.navbar-brand img { height: 20px; }
+  a.navbar-brand {
+    span {
+      color: $COLOR_LIGHT_GRAY;
+      display: inline-block;
+      font-family: Oswald, Helvetica Neue, Helvetica, sans-serif;
+      font-weight: 300;
+      font-size: 24px;
+      margin-top: -10px;
+      position: absolute;
+      top: 25px;
+      left: 80px;
+    }
+    img {
+      background-color: $COLOR_LIGHT_GRAY;
+      border: 5px solid $COLOR_PRIMARY;
+      border-radius: 28px;
+      display: inline-block;
+      height: 56px;
+      margin-top: -10px;
+      padding: 2px;
+      width: 56px;
+    }
+  }
+  div.navbar-header { background-color: $COLOR_PRIMARY; }
+  ul.navbar-nav { margin: 0; }
+
+  .navbar-default {
+    .navbar-collapse {
+      padding: 10px 0;
+      border-bottom: 5px solid $COLOR_PRIMARY;
+    }
+
+    .navbar-toggle {
+      background-color: darken($COLOR_PRIMARY, 10%);
+      border-color: $COLOR_LIGHT_GRAY;
+      &:hover { background-color: darken($COLOR_PRIMARY, 20%); }
+      &:focus { background-color: darken($COLOR_PRIMARY, 20%); }
+      .icon-bar { background-color: $COLOR_LIGHT_GRAY; }
+    }
+
+    .navbar-nav>li>a {
+      clear: both;
+      height: 60px;
+      &:hover { background-color: rgba(darken($COLOR_SECONDARY, 2%), 0.6); }
+      span {
+        display: inline-block;
+        float: left;
+        height: 40px;
+        line-height: 40px;
+      }
+      i {
+        color: $COLOR_PRIMARY;
+        display: inline-block;
+        float: left;
+        line-height: 40px;
+        text-align: center;
+        width: 56px;
+        height: 40px;
+      }
+    }
+  }
 }
