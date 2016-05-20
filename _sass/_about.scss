@@ -48,7 +48,12 @@ dl.dl-horizontal {
   }
 }
 
-div.technologies {
+h4.about-technologies {
+  text-align: center;
+  font-weight: bold;
+}
+
+div.about-technologies {
   margin-top: 40px;
   text-align: center;
   div { padding: 0 5px; }
