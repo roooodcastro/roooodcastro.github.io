@@ -1,0 +1,20 @@
+ul.blog-index-list {
+  margin-top: 40px;
+  list-style: none;
+  font-size: 18px;
+  a {
+    font-size: 40px;
+    display: block;
+  }
+  span {
+    color: lighten($COLOR_GRAY, 10%);
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    small {
+      font-size: 16px;
+      font-weight: normal;
+    }
+  }
+}

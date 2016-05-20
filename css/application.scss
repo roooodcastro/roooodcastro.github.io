@@ -3,32 +3,29 @@
 @charset "utf-8";
 
 @import "../_sass/colors";
-@import "../_sass/navbar";
 @import "../_sass/fonts";
-@import "../_sass/_about.scss";
+@import "../_sass/footer";
+@import "../_sass/navbar";
+@import "../_sass/about.scss";
+@import "../_sass/blog.scss";
 
 html { height: 100%; }
-
-body {
-  background-color: $COLOR_LIGHT_GRAY;
-}
+body { height: 100%; background-color: $COLOR_LIGHT_GRAY; }
 
 h1 {
   font-family: Oswald, Helvetica Neue, Helvetica, sans-serif;
   font-weight: 300;
   color: #8C8C8C;
-  font-size: 6vh;
-  margin: 4vh 0;
+  font-size: 56px;
+  margin: 20px 0;
 }
 
-hr {
-  border-color: darken($COLOR_LIGHT_GRAY, 20%);
-  margin: 20px;
-}
+hr { border-color: darken($COLOR_LIGHT_GRAY, 20%); margin: 20px; }
 
-img.logo {
-  height: 70vh;
-}
+img.logo { height: 70vh; }
+
+.wrap { min-height: 100%; margin-bottom: -100px; }
+.wrap:after { content: ""; display: block; height: 100px; }
 
 .container {
   background-color: white;
@@ -36,17 +33,10 @@ img.logo {
   -moz-box-shadow: 0 0 20px 0 rgba($COLOR_GRAY, 0.1);
   box-shadow: 0 0 20px 0 rgba($COLOR_GRAY, 0.1);
   margin-top: -20px;
+  margin-bottom: 20px;
   padding: 20px;
 }
 
 @media (min-width: 768px) {
   .container { margin-top: 0; }
-}
-
-#groupSalas path {
-  &:hover {
-    fill: darken(#BEBEBE, 10%) !important;
-    stroke: black !important;
-    stroke-width: 2px !important;
-  }
 }
