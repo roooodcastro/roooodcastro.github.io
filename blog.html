@@ -4,14 +4,25 @@ title: Blog
 permalink: /blog/
 ---
 
-<h1>Blowing Stuff's Blog</h1>
+<div class="blog-index">
+    <h1 class="blog-index-header">Blog</h1>
 
-<ul class="blog-index-list">
-    {% for post in site.posts %}
-    <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-        <span>{{ post.date | date: "%B %d, %Y <small>@ %H:%M</small>" }}</span>
-        {{ post.excerpt }}
-    </li>
-    {% endfor %}
-</ul>
+    <ul class="blog-index-list">
+        {% for post in site.posts %}
+        <li class="blog-index-preview">
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="{{ post.url }}" class="blog-index-preview-image">
+                        <img src="/images/rails.svg">
+                    </a>
+                </div>
+                <div class="col-md-8 blog-index-preview-text">
+                    <a href="{{ post.url }}">{{ post.title }}</a>
+                    <span>{{ post.date | date: "%B %d, %Y" }}</span>
+                    {{ post.excerpt }}
+                </div>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+</div>

@@ -12,12 +12,19 @@
 html { height: 100%; }
 body { height: 100%; background-color: $COLOR_LIGHT_GRAY; }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
   font-family: Oswald, Helvetica Neue, Helvetica, sans-serif;
   font-weight: 300;
   color: #8C8C8C;
-  font-size: 56px;
+}
+
+h1 {
+  font-size: 48px;
   margin: 20px 0;
+}
+
+h2 {
+  font-size: 40px;
 }
 
 hr { border-color: darken($COLOR_LIGHT_GRAY, 20%); margin: 20px; }
