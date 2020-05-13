@@ -68,25 +68,11 @@ ul.blog-index-list {
   font-size: 18px;
 }
 
+.Post__content {
+  line-height: 1.5em;
+  text-align: justify;
+}
+
 @media (min-width: 768px) {
   div.blog-index { padding: 0 40px; }
-}
-
-.blog-post {
-
-}
-
-p.blog-post-meta {
-  color: lighten($COLOR_GRAY, 10%);
-  display: inline-block;
-  font-size: 1.7rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-  time, span { color: $COLOR_SECONDARY_TEXT; }
-}
-
-.blog-post-content {
-  font-size: 1.8rem;
-  line-height: 2.5rem;
-  text-align: justify;
 }

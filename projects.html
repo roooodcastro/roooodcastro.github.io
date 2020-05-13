@@ -7,8 +7,10 @@ permalink: /projects/
 <h1>Projects</h1>
 
 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+  {% assign post_counter = 0 %}
   {% for project in site.posts %}
-  {% if project.categories contains "project" %}
+  {% if project.categories contains "projects" %}
+  {% assign post_counter = post_counter | plus: 1 %}
   <div class="col mb-3">
     <div class="card h-100 ProjectCard">
       <img src="{{ project.thumbnail }}" alt="{{ project.thumbnail_alt}}" />
@@ -31,3 +33,9 @@ permalink: /projects/
   {% endif %}
   {% endfor %}
 </div>
+
+{% if post_counter == 0 %}
+<h4 class="text-secondary">
+    Looks like there's nothing here yet :(
+</h4>
+{% endif %}

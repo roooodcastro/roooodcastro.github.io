@@ -8,7 +8,10 @@ permalink: /blog/
     <h1 class="blog-index-header">Blog</h1>
 
     <ul class="blog-index-list">
+        {% assign post_counter = 0 %}
         {% for post in site.posts %}
+        {% if post.categories contains "blog" %}
+        {% assign post_counter = post_counter | plus: 1 %}
         <li class="blog-index-preview">
             <div class="row">
                 <div class="col-md-4">
@@ -23,6 +26,13 @@ permalink: /blog/
                 </div>
             </div>
         </li>
+        {% endif %}
         {% endfor %}
+
+        {% if post_counter == 0 %}
+        <h4 class="text-secondary">
+            Looks like there's nothing here yet :(
+        </h4>
+        {% endif %}
     </ul>
 </div>
