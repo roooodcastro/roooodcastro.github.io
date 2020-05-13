@@ -6,4 +6,28 @@ permalink: /projects/
 
 <h1>Projects</h1>
 
-Coming Soon...
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+  {% for project in site.posts %}
+  {% if project.categories contains "project" %}
+  <div class="col mb-3">
+    <div class="card h-100 ProjectCard">
+      <img src="{{ project.thumbnail }}" alt="{{ project.thumbnail_alt}}" />
+
+      <div class="card-body">
+        <a href="{{ project.url }}" class="stretched-link"></a>
+        <h4 class="card-title">{{ project.title }}</h4>
+
+        <p class="card-text">
+          {{ project.excerpt | strip_html }}
+        </p>
+        <p class="card-text">
+          <small class="text-muted">
+            {{ project.date | date: "%B %d, %Y" }}
+          </small>
+        </p>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+  {% endfor %}
+</div>

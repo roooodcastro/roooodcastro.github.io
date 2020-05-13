@@ -4,13 +4,22 @@
 
 @import "../_sass/colors";
 @import "../_sass/fonts";
+@import "../_sass/background";
 @import "../_sass/footer";
-// @import "../_sass/navbar";
-@import "../_sass/about.scss";
+@import "../_sass/navbar";
+@import "../_sass/whoami.scss";
 @import "../_sass/blog.scss";
+@import "../_sass/projects.scss";
 
-html { height: 100%; }
-body { height: 100%; background-color: $COLOR_LIGHT_GRAY; }
+html {
+  font-size: 16px;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background: $COLOR_LIGHT_GRAY;
+}
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Oswald, Helvetica Neue, Helvetica, sans-serif;
@@ -20,7 +29,9 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 48px;
-  margin: 20px 0;
+  padding: 0 0 1rem 0;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid $COLOR_BORDER;
 }
 
 h2 {
@@ -41,7 +52,7 @@ img.logo { height: 70vh; }
   box-shadow: 0 0 20px 0 rgba($COLOR_GRAY, 0.1);
   margin-top: -20px;
   margin-bottom: 20px;
-  padding: 20px;
+  padding: 3rem 20px 20px 20px;
 }
 
 @media (min-width: 768px) {
