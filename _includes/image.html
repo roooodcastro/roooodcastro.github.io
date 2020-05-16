@@ -1,22 +1,24 @@
 {% assign image_names = include.name | split: '|' %}
 {% assign descriptions = include.description | split: '|' %}
 
-<div class="d-block d-lg-flex justify-content-center">
-  {% for image_name in image_names %}
+<div class="d-flex justify-content-center">
+  <div class="card-group">
+    {% for image_name in image_names %}
     {% assign file_name = page.path | split: '/' | last | split: '.' | first %}
     {% assign file_date = file_name | truncate: 14 | replace: '...', '' %}
     {% assign post_slug = file_name | replace_first: file_date, '' %}
     {% assign asset_path = post_slug | prepend: '/images/posts/' | append: '/' | append: image_name %}
 
-    <figure class="card">
+    <figure class="card mb-3">
       <img
-        src="{{ site.url }}{{ asset_path }}"
-        alt="{{ include.description }}"
+      src="{{ site.url }}{{ asset_path }}"
+      alt="{{ descriptions[forloop.index0] }}"
       >
 
-      <figcaption class="card-body bg-light px-3 py-2">
+      <figcaption class="card-body bg-light px-3 py-2 border-top">
         {{ descriptions[forloop.index0] }}
       </figcaption>
     </figure>
-  {% endfor %}
+    {% endfor %}
+  </div>
 </div>

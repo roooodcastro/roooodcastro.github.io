@@ -47,12 +47,14 @@ prototyping, building, and most importantly, play testing the pad:
 The pad frame is built mainly out of wood, and has (should have) the same dimensions as the official pad. The only size
 difference is at the front and back, where the official pads have an extended area in the front for the electronics,
 and an extended area at the back for the metal bar. That bar is meant for the player to hold on so they can keep their
-balance on harder songs. It's something I intend to integrate to my pad in the future. Along with wood, each pad is
-supported by a 3D printed frame. 3D printing was chosen mainly because I'm a developer/tech person, and I can create
-a more complex 3D design much more easily than I can make complex wood cuts and joins :). And yes, even with full
-adults jumping up and down on those plastic parts, they seem to be holding the impact very well, with no visible wear.
-Lastly, I added some handles so it's easy to pick it up and store it, as I live in a compact apartment and optimising
-space is a must.
+balance on harder songs and it's something I intend to integrate to my pad in the future. The final external dimensions
+of the pad are 877x877x57mm, plus some 40mm at the front for the handles.
+
+Along with wood, each pad is supported by a 3D printed frame. 3D printing was chosen mainly because I'm a
+developer/tech person, and I can create a more complex 3D design much more easily than I can make complex wood cuts
+and joins :). And yes, even with full adults jumping up and down on those plastic parts, they seem to be holding the
+impact very well, with no visible wear. Lastly, I added some handles so it's easy to pick it up and store it, as I live
+in a compact apartment and optimising space is a must.
 
 {photo of new naked structure with wood/3d printed pad frame}
 

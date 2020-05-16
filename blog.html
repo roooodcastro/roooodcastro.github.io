@@ -16,7 +16,10 @@ permalink: /blog/
             <div class="row">
                 <div class="col-md-4">
                     <a href="{{ post.url }}" class="blog-index-preview-image">
-                        <img src="/images/rails.svg">
+                        <img
+                            src="{{ post.thumbnail }}"
+                            alt="{{ post.thumbnail_alt }}"
+                        >
                     </a>
                 </div>
                 <div class="col-md-8 blog-index-preview-text">
