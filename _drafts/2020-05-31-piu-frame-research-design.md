@@ -25,43 +25,61 @@ tags:
 <!--more-->
 
 <em>This is the first post in a four part series detailing my process of building a DIY Pump it Up pad. If you don't
-know what this is about, check my [project summary here](/).</em>
+know what this is about, check out my [project summary here](/). You can also jump to any part of the series:</em>
+
+* **Part 1 - Research, Frame Design and Build** (you're here)
+* Part 2 - Panels Construction (TODO)
+* Part 3 - Sensors, Sensors, Sensors (TODO)
+* Part 4 - Electronics and Programming (TODO)
 
 ---
 
 My initial idea for this project was to build a sturdy wood and metal frame, identical to the arcade ones, both in size
-and in looks. I then started to google the exact dimensions and specifications for the pads, how the sensors worked,
+and in looks. I then started to google the exact dimensions and specifications for the panels, how the sensors worked,
 etc. With that in hand, I started to design a wooden frame in Fusion 360. At first I had only a rough idea of the size
 of the timber I was going to build, so I made sure to parameterise everything so that I could adjust in the future.
-I designed it in a way that it would only use cuts from 15mm plywood board and 2x1 softwood timber, to make it as
-simple and cheap as possible. I also didn't have any decent power tools to cut wood, and wanted to buy the fewest tools
-I could to get it done, so the wood cuts had to be as few as simple as possible.
+I designed it so it would need as few and simple cuts of wood as possible. This was mostly because I didn't have any
+power saws, and little practical woodworking experience.
 
-The following images are from the Fusion 360 design I initially drew. All the dimensions are correct in the finished
-pad, but the pad frames (bottom left picture) were designed as 3D printed parts instead of wood ones.
+The design of the frame and whole pad evolved all the time, both as I was building it, and also after I had a working
+pad. The first big change was the decision to use 3D printed for the brackets supports, instead of cutting wood
+triangles. I have to admit the sole reason for that was laziness in not wanting to cut the wood precisely to size.
+
+After finishing a basic version of the pad, still using wood panels instead of acrylic ones, I got one acrylic panel
+to test how the acrylic would behave, as I wasn't quite sure it could take on the weight and impact, but it turns out
+that it can handle that pretty well.
+
+During this phase of the testing I had some issues with the sensors and had to
+re-design them, leading to a need for more vertical space inside the pad. The wood panel structure took 20mm of the
+total available height (42mm), and while I was still validating the one acrylic panel, I was using the 15mm wood panels
+on the other four pads. This left only 7mm for the sensor, which turned out to be not enough, so I had to design a
+shorter support structure. I ended up with a structure where the sensors can be 5mm higher than before, at 12mm height,
+which was enough for me to be able to make a decent sensor. After that I simply converted the whole pad to use the
+plastic panel supports.
+
+The following images are from the Fusion 360 design I initially drew. All the dimensions are correct for the finished
+pad but, on the bottom left picture, those timber pieces were replaced with 3D printed parts.
 
 {% include
   image.html
-  name="base_frame_project.png"
-  description="Frame project without any top plates"
+  name="base_frame_project.png|frame_project.png"
+  description="Frame sketch without platforms|Frame sketch with the platforms and brackets"
 %}
 
 {% include
   image.html
   name="frame_timber_project.png|frame_mid_supports_project.png"
-  description="Pad frames dimensions|Pad middle top plates supports dimensions"
+  description="Panel supports dimensions, those were replaced with 3D printed parts|Platform supports dimensions"
 %}
-
 
 I then ended up with a finished project for the pad, and from there I could start looking into local suppliers for
 wood, steel and acrylic. After getting a few quotes, I quickly realised that the metal plates would be by far the most
 expensive part of the project, as I'd need to get them already cut and bent, as I don't have a press brake to do so.
 The cheapest quote I got was around €120, and that didn't even include the bending, so I simply gave up on using steel.
 
-I managed to find a place that sold the plywood sheet already cut to size (at a premium), which saved me *a lot* of
-work, since I would need to handle and cut the 1550x1550x15mm sheet by myself with manual tools inside an apartment,
-not fun. To cut the 2x1 (actually 42x20mm) timber, I used a mitre saw and a 3D printed mitre block. Throughout this
-project, I used quite a lot of 3D printed tools and jigs, making a lot of the work easier and more precise.
+I managed to find a place that sold the plywood sheet already cut to size (at a small premium), which saved me *a lot*
+of work. To cut the 42x20mm (equivalent to 2x1") timber, I used a mitre saw and a 3D printed mitre block. Throughout
+this project, I used a few 3D printed tools and jigs, making some of the processes easier and more precise.
 
 {% include
   image.html
@@ -69,20 +87,22 @@ project, I used quite a lot of 3D printed tools and jigs, making a lot of the wo
   description="Mitre saw and block guide I used to cut the timber to size"
 %}
 
-After cutting everyting to size, I ended up with the first version of the frame. As mentioned before, this would not be
-the final version of it, as I replaced most of the wood inside, keeping only mostly the outer shell made out of wood,
-with 3D printed plastic parts. This might be confusing as wood is regarded as being much stronger than plastic,
-especially for this kind of application that needs good mechanical strength, but the sensor design was ultimately the
-decisive factor in this. I'll talk more about that in a later post.
+After cutting everyting to size, I had my first version of the frame. As mentioned before, this is not be the final
+version of it, as I replaced all the support structures for each panel with 3D printed ones. This change might seem
+confusing as wood is usually regarded as being much stronger than plastic, especially for this kind of application
+that needs good mechanical strength, but the sensor design was ultimately the decisive factor in this. I'll talk more
+about that in a later post.
 
-To actually construct and secure the frame, I used 4x30mm wood screws. I only used wood glue on the frame's outer
-shell, as it was the only part I knew for sure I wouldn't need to disassemble or change later. I'm glad I did that,
-otherwise I wouldn't be able to swap the pad frame for plastic later on.
+To construct and secure the frame, I used 4x30mm wood screws. I only used wood glue to fix the frame's outer walls and
+its base, as those were the only parts I knew for sure I wouldn't need to disassemble or change later. I'm glad I did
+that, otherwise I wouldn't be able to swap the panel supports for plastic later on. Below is a photo of that first,
+all-wood frame, just prior to me fixing and gluing everything in place, and a photo of the finished frame, without the
+sensors and electronics.
 
 {% include
   image.html
   name="first_wood_frame.jpg|first_wood_frame.jpg"
-  description="Assembled (but not fixed) wood frame|Hybrid wood+plastic frame"
+  description="Assembled (but not screwed) all-wood frame|Finished hybrid wood+plastic frame"
 %}
 
 Lastly, I decided to incorporate a USB socket to facilitate plugging the pad into a computer, and avoid having a
@@ -101,16 +121,20 @@ to whithin the limits of a USB 3.0 connection, so that's not needed anymore.
 
 ### Bill of Materials for the pad
 
-These are the materials I used to build the whole pad, along with approximate costs for each. These estimates are for
-the finished, wood/plastic hybrid pad, but in reality I spent a lot more on prototype stuff and parts that were
-eventually scraped. The 3D printed parts were mostly printed with 3 perimeters and 15% infill. The number of screws
-used in the whole pad is 179, quite a lot, and most of these were used in each pad's support assembly together with the
-3D printed parts.
+These are the materials and parts I used to build the whole pad, along with approximate costs for each. I already had
+some of the electronics and 3D filament, so some prices are based on what I could find online at the time of writing.
+The estimates are also for the "hybrid" wood/plastic pad, in reality I probably spent around double of what's here due
+to me making some prototype parts and other stuff that was eventually scraped.
+
+The 3D printed parts were all printed with 3 perimeters and between 10-20% infill. Using a denser infill was not really
+needed because the number of perimeters and screws used (the pad uses a total of 179 screws) gave the parts more than
+enough strength. Most parts were printed in PLA, with some printed in some leftover ABS I had laying around. So far,
+after a few months of use, none of the plastic pieces show any sign of wear, but only time will tell if and how much
+[deformation creep](https://en.wikipedia.org/wiki/Creep_(deformation)) will affect it.
 
 ##### Tools:
 
-I'm not including the cost of the tools, as I already owned some of them, but these are most of the tools I used in
-the project:
+I'm not including the cost of the tools, as I already owned some of them, but I wanted to list them anyway:
 
 * DeWalt 650W corded impact drill (used as a drill and as a power screwdriver)
 * 3D printer (Prusa i3 clone)
@@ -222,7 +246,8 @@ the project:
 
 #### Plywood and timber cuts:
 
-These are the sizes in which the plywood and timber need to be cut, for a hybrid wood/plastic pad using 42x20mm timber:
+These are the sizes in which the plywood and timber need to be cut, for a hybrid wood/plastic pad using 42x20mm timber
+and 15mm plywood:
 
 Plywood:
 
@@ -234,4 +259,8 @@ Timber:
 
 * 2x 877mm
 * 2x 837mm
-* 8x 277mm (these need to be cut along its length so it ends up being almost square at 27x20mm instead of 42x20mm)
+* 8x 277mm*
+
+\* These last 8 cuts need to be trimmed down, so the timber measures 27x20mm instead of 42x20mm. The 27mm size is
+basically the difference between the largest size of the timber (42mm) and the thickness of the plywood (15mm). It's
+sized so the plywood platforms will remain flush with the pad walls.
