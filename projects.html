@@ -22,11 +22,13 @@ permalink: /projects/
         <p class="card-text">
           {{ project.excerpt | strip_html }}
         </p>
-        <p class="card-text">
-          <small class="text-muted">
-            {{ project.date | date: "%B %d, %Y" }}
-          </small>
-        </p>
+      </div>
+      <div class="card-footer">
+        {% for tag in project.tags %}
+        <span class="badge badge-pill badge-primary">
+            {{ tag }}
+        </span>
+        {% endfor %}
       </div>
     </div>
   </div>

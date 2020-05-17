@@ -18,8 +18,9 @@ html {
 }
 
 body {
+  @extend .Background--hexagon;
+
   height: 100%;
-  background: $COLOR_LIGHT_GRAY;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -48,14 +49,13 @@ img.logo { height: 70vh; }
 
 .container {
   background-color: white;
-  -webkit-box-shadow: 0 0 20px 0 rgba($COLOR_GRAY, 0.1);
   -moz-box-shadow: 0 0 20px 0 rgba($COLOR_GRAY, 0.1);
   box-shadow: 0 0 20px 0 rgba($COLOR_GRAY, 0.1);
-  margin-top: -20px;
-  margin-bottom: 20px;
-  padding: 3rem 20px 20px 20px;
+  padding: 2rem 1rem;
 }
 
-@media (min-width: 768px) {
-  .container { margin-top: 0; }
+@media (min-width: 992px) {
+  .container {
+    padding: 2rem 3rem;
+  }
 }

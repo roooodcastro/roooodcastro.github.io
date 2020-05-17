@@ -40,4 +40,29 @@ layout: default
     <div class="Post__content" itemprop="articleBody">
         {{ content }}
     </div>
+
+    {% if page.navigation %}
+    <hr />
+
+    <div class="row">
+        <div class="col-12 col-md-6 text-center">
+            {% if page.navigation.previous %}
+            <a href="{{ page.navigation.previous.url }}" class="btn btn-link btn-block">
+                <strong>« Previous</strong> - {{ page.navigation.previous.label }}
+            </a>
+            {% endif %}
+        </div>
+        <div class="col-12 col-md-6 text-center">
+            {% if page.navigation.next %}
+            <a href="{{ page.navigation.previous.url }}" class="btn btn-link btn-block">
+                {{ page.navigation.next.label }} - <strong>Next »</strong>
+            </a>
+            {% endif %}
+        </div>
+    </div>
+    {% endif %}
+
+    <span class="Post__end-indicator">
+        <img src="/images/logo_simples.svg" alt="" role="presentation">
+    </span>
 </article>

@@ -69,8 +69,8 @@ ul.blog-index-list {
 }
 
 .Post__content {
+  font-size: 1.2em;
   line-height: 1.5em;
-  text-align: justify;
 
   img {
     display: flex;
@@ -86,10 +86,32 @@ ul.blog-index-list {
   }
 }
 
+.Post__end-indicator {
+  border-top: 1px solid $COLOR_BORDER;
+  display: block;
+  line-height: 0;
+  margin: 2rem 0 1rem 0;
+  text-align: center;
+
+  img {
+    background-color: white;
+    filter: grayscale(1);
+    height: 2.5rem;
+    margin-top: -1.25rem;
+    padding: 0 1rem;
+  }
+}
+
 @media (min-width: 768px) {
   div.blog-index { padding: 0 40px; }
 
   .Post__content {
     padding: 0 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .Post__content h3 {
+    margin: 2rem 0 1rem -1rem;
   }
 }

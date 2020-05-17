@@ -15,6 +15,10 @@ tags:
   - Arcade
   - 3D Printing
   - Dance Pad
+navigation:
+  next:
+    label: Panels Construction
+    url: '/'
 ---
 
 <p class="d-none">
@@ -262,5 +266,5 @@ Timber:
 * 8x 277mm*
 
 \* These last 8 cuts need to be trimmed down, so the timber measures 27x20mm instead of 42x20mm. The 27mm size is
-basically the difference between the largest size of the timber (42mm) and the thickness of the plywood (15mm). It's
+basically the difference between the large side of the timber (42mm) and the thickness of the plywood (15mm). It's
 sized so the plywood platforms will remain flush with the pad walls.
