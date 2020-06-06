@@ -6,14 +6,21 @@
     {% for image_name in image_names %}
     {% assign file_name = page.path | split: '/' | last | split: '.' | first %}
     {% assign file_date = file_name | truncate: 14 | replace: '...', '' %}
+    {% assign file_ext = image_name | split: "." | last %}
     {% assign post_slug = file_name | replace_first: file_date, '' %}
     {% assign asset_path = post_slug | prepend: '/images/posts/' | append: '/' | append: image_name %}
 
     <figure class="card mb-3">
-      <img
-      src="{{ site.url }}{{ asset_path }}"
-      alt="{{ descriptions[forloop.index0] }}"
-      >
+      {% if file_ext == 'mp4' %}
+        <video muted autoplay loop>
+          <source src="{{ site.url }}{{ asset_path }}" type="video/mp4">
+        </video>
+      {% else %}
+        <img
+          src="{{ site.url }}{{ asset_path }}"
+          alt="{{ descriptions[forloop.index0] }}"
+        >
+      {% endif %}
 
       <figcaption class="card-body bg-light px-3 py-2 border-top">
         {{ descriptions[forloop.index0] }}
