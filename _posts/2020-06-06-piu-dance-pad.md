@@ -3,7 +3,7 @@ layout:        post
 title:         "Pump it Up Dance Pad build"
 thumbnail:     /images/posts/piu-dance-pad/piu_prime2.jpg
 thumbnail_alt: "Photo of completed pad"
-date:          2020-05-15 15:52:00 +0000
+date:          2020-06-06 00:00:00 +0000
 author:        Rodrigo Azevedo
 categories:    projects
 tags:
