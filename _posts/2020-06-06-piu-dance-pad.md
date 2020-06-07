@@ -38,11 +38,11 @@ designing, prototyping, building, and most importantly, play testing the pad:
 This post is just a high level overview of what the pad is and how it works. You can find more detailed information
 about each of the pad's components here:
 
-1. Frame
-2. Arrow Panels
-3. Sensors
-4. LEDs and Electronics
-5. Arduino Programming
+1. *(TODO) Frame Build and BOM*
+2. *(TODO) Arrow Panels*
+3. *(TODO) Pad Sensors*
+4. *(TODO) LEDs and Electronics*
+5. *(TODO) Arduino Programming*
 
 ### Frame
 

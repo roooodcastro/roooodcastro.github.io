@@ -1,8 +1,8 @@
 ---
 layout:        post
-title:         "PIU Dance Pad - Panels Construction"
-thumbnail:     /images/posts/piu-frame-research-design/first_wood_frame.jpg
-thumbnail_alt: "Acrylic pads with the arts printed on them"
+title:         "PIU Dance Pad (part 2) - Arrow Panels"
+thumbnail:     /images/posts/piu-arrow-panels/finished_arrows.jpg
+thumbnail_alt: "Acrylic pads with the arrow art printed on them"
 date:          2020-05-15 00:00:00 +0000
 author:        Rodrigo Azevedo
 categories:    blog
@@ -18,7 +18,7 @@ tags:
 ---
 
 <p class="d-none">
-  Design and construction of the acrylic panels and the LEDs that light them from beneath.
+  Design, construction and prototypes of the acrylic arrow panels for each pad.
 </p>
 
 <!--more-->
@@ -26,10 +26,11 @@ tags:
 <em>This is the second post in a four part series detailing my process of building a DIY Pump it Up pad. If you don't
 know what this is about, check out my [project summary here](/). You can also jump to any part of the series:</em>
 
-* [Part 1 - Research, Frame Design and Build]()
-* **Part 2 - Panels Construction** (you're here)
-* Part 3 - Sensors, Sensors, Sensors (TODO)
-* Part 4 - Electronics and Programming (TODO)
+* [Part 1 - Frame Build and BOM]()
+* **Part 2 - Arrow Panels**
+* *Part 3 - Pad Sensors (TODO)*
+* *Part 4 - LEDs and Electronics (TODO)*
+* *Part 5 - Arduino Programming (TODO)*
 
 ---
 
