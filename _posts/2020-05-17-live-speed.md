@@ -1,11 +1,15 @@
 ---
-layout:        post
-title:         "Live Speed - A Websockets Based Card Game"
-thumbnail:     /images/posts/live-speed/logo.png
-thumbnail_alt: "Project Logo - 2 playing cards with the text \"Live Speed\""
-date:          2020-05-17 18:10:00 +0000
-author:        Rodrigo Azevedo
-categories:    projects
+layout:           post
+title:            "Live Speed - A Websockets Based Card Game"
+description:      "Implementation of a card game using Ruby on Rails, VueJS and websockets to allow for real-time,
+                   online gameplay."
+thumbnail:        /images/posts/live-speed/logo.png
+thumbnail_alt:    "Project Logo - 2 playing cards with the text \"Live Speed\""
+thumbnail_width:  1600
+thumbnail_height: 1000
+date:             2020-05-17 18:10:00 +0000
+author:           Rodrigo Azevedo
+categories:       projects
 tags:
   - Web Development
   - Ruby on Rails

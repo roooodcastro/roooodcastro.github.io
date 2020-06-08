@@ -16,6 +16,18 @@
 
     <title>{% if page.title %}{{ page.title | escape }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
 
+    <!-- SEO -->
+    <meta name="description" content="{{ page.description }}">
+
+    <meta property="og:title" content="{% if page.title %}{{ page.title | escape }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}" />
+    <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}" />
+
+    {% if page.thumbnail %}
+        <meta property="og:image" content="{{ page.thumbnail | prepend: site.url}}" />
+        <meta property="og:image:width" content="{{ page.thumbnail_width }}" />
+        <meta property="og:image:height" content="{{ page.thumbnail_height }}" />
+    {% endif %}
+
     <!-- Bootstrap 4.5 -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

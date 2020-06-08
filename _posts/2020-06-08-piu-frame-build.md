@@ -1,11 +1,15 @@
 ---
-layout:        post
-title:         "PIU Dance Pad (part 1) - Frame Build and BOM"
-thumbnail:     /images/posts/piu-frame-build/finished_frame.jpg
-thumbnail_alt: "Finished frame, without any electronics or arrow panels"
-date:          2020-06-08 00:00:00 +0000
-author:        Rodrigo Azevedo
-categories:    blog
+layout:           post
+title:            "PIU Dance Pad (part 1) - Frame Build and BOM"
+description:      "Details about how I initially designed and built the hybrid wooden + plastic frame. This also
+                   includes the complete Bill of Materials (BOM) for the entire pad, with all associated costs."
+thumbnail:        /images/posts/piu-frame-build/finished_frame.jpg
+thumbnail_alt:    "Finished frame, without any electronics or arrow panels"
+thumbnail_width:  1080
+thumbnail_height: 810
+date:             2020-06-08 00:00:00 +0000
+author:           Rodrigo Azevedo
+categories:       blog
 tags:
   - DIY
   - Build
@@ -22,8 +26,8 @@ navigation:
 ---
 
 <p class="d-none">
-  Details about how I initially researched and designed the wooden frame. From finding official manuals to look for
-  dimensions, to designing the whole frame in Fusion 360.
+  Details about how I initially designed and built the hybrid wooden + plastic frame. This also includes the complete
+  Bill of Materials (BOM) for the entire pad, with all associated costs.
 </p>
 
 <!--more-->

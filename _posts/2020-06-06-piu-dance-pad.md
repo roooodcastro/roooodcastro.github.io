@@ -1,11 +1,15 @@
 ---
-layout:        post
-title:         "Pump it Up Dance Pad build"
-thumbnail:     /images/posts/piu-dance-pad/piu_prime2.jpg
-thumbnail_alt: "Photo of completed pad"
-date:          2020-06-06 00:00:00 +0000
-author:        Rodrigo Azevedo
-categories:    projects
+layout:           post
+title:            "Pump it Up Dance Pad build"
+description:      "DIY dance pad for the game Pump it Up. Built using wood, full acrylic panels, 3D printed parts and
+                   LED lighting controlled via Arduino."
+thumbnail:        /images/posts/piu-dance-pad/finished_pad.jpg
+thumbnail_alt:    "Photo of completed pad"
+thumbnail_width:  1080
+thumbnail_height: 810
+date:             2020-06-06 00:00:00 +0000
+author:           Rodrigo Azevedo
+categories:       projects
 tags:
   - DIY
   - Build
@@ -15,7 +19,8 @@ tags:
 ---
 
 <p class="d-none">
-  DIY dance pad for the game Pump it Up. Built using wood, full acrylic panels, 3D printed parts and LED lighting.
+  DIY dance pad for the game Pump it Up. Built using wood, full acrylic panels, 3D printed parts and LED lighting
+  controlled via Arduino.
 </p>
 
 <!--more-->

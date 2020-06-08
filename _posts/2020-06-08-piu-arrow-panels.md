@@ -1,11 +1,14 @@
 ---
-layout:        post
-title:         "PIU Dance Pad (part 2) - Arrow Panels"
-thumbnail:     /images/posts/piu-arrow-panels/finished_arrows.jpg
-thumbnail_alt: "Acrylic pads with the arrow noteskins printed on them"
-date:          2020-06-08 01:00:00 +0000
-author:        Rodrigo Azevedo
-categories:    blog
+layout:           post
+title:            "PIU Dance Pad (part 2) - Arrow Panels"
+description:      "Design, construction and prototypes of the acrylic arrow panels for each pad."
+thumbnail:        /images/posts/piu-arrow-panels/finished_arrows.jpg
+thumbnail_alt:    "Acrylic pads with the arrow noteskins printed on them"
+thumbnail_width:  1080
+thumbnail_height: 810
+date:             2020-06-08 01:00:00 +0000
+author:           Rodrigo Azevedo
+categories:       blog
 tags:
   - DIY
   - Build
