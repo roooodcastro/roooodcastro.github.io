@@ -1,9 +1,9 @@
 ---
 layout:        post
 title:         "PIU Dance Pad (part 1) - Frame Build and BOM"
-thumbnail:     /images/posts/piu-frame-research-design/finished_frame.jpg
+thumbnail:     /images/posts/piu-frame-build/finished_frame.jpg
 thumbnail_alt: "Finished frame, without any electronics or arrow panels"
-date:          2020-05-15 00:00:00 +0000
+date:          2020-06-08 00:00:00 +0000
 author:        Rodrigo Azevedo
 categories:    blog
 tags:
@@ -18,7 +18,7 @@ tags:
 navigation:
   next:
     label: Arrow Panels
-    url: '/'
+    url: '/blog/2020/06/08/piu-arrow-panels.html'
 ---
 
 <p class="d-none">
@@ -28,11 +28,12 @@ navigation:
 
 <!--more-->
 
-<em>This is the first post in a four part series detailing my process of building a DIY Pump it Up pad. If you don't
-know what this is about, check out my [project summary here](/). You can also jump to any part of the series:</em>
+<em>This is the first post in a five part series detailing my process of building a DIY Pump it Up pad. If you don't
+know what this is about, check out my [project summary here]({% post_url 2020-06-06-piu-dance-pad %}).
+You can also jump to any part of the series:</em>
 
 * **Part 1 - Frame Build and BOM**
-* *Part 2 - Arrow Panels (TODO)*
+* [Part 2 - Arrow Panels]({% post_url 2020-06-08-piu-arrow-panels %})
 * *Part 3 - Pad Sensors (TODO)*
 * *Part 4 - LEDs and Electronics (TODO)*
 * *Part 5 - Arduino Programming (TODO)*
@@ -52,7 +53,9 @@ From the beginning I knew I was going to build this using an iterative design pr
 the whole pad changed and evolved many times, during design, build, and even after I had a working pad. The first big
 change was the decision to use 3D printed parts for the brackets supports, instead of cutting wood triangles. After
 that, I noticed that the plastic was really sturdy, so eventually I decided to get rid of almost all internal wood bits
-and use a 3D printed support frame for each arrow panel as well.
+and use a 3D printed support frame for each arrow panel as well. The last major change was to get rid of the brackets
+and build a bracketless pad, as that's what the arcade pads use in the newer machines. The first complete version of
+the pad was fully bracketed, so I devised a way to migrate this to a bracketless design using the same parts as before.
 
 After finishing an initial version of the pad, still using wood arrow panels instead of acrylic ones, I got one acrylic
 panel made so I could test how the acrylic would behave, as I wasn't quite sure it could take on the weight and impact,
@@ -66,8 +69,15 @@ problems in the first place. I then ended up having to design a shorter support 
 made the move to the internal 3D printed frame. I ended up with a structure that allowed the sensors to be 5mm higher
 than before with wood arrows, at 12mm height, which was enough to design decent sensors.
 
-The following images are from the initial Fusion 360 design I made. All the dimensions are correct for the finished
-pad but, on the bottom left picture, those timber pieces were replaced with 3D printed parts.
+You can view and download the Fusion360 design, and all 3D printed parts, in either Thingiverse or PrusaPrinters:
+
+* [https://www.thingiverse.com/thing:4437046](https://www.thingiverse.com/thing:4437046)
+* [https://www.prusaprinters.org/prints/33072-pump-it-up-dance-pad-printed-parts](https://www.prusaprinters.org/prints/33072-pump-it-up-dance-pad-printed-parts)
+
+The following images are from the initial Fusion 360 design I made, which is also available in the links above. All
+the dimensions are correct for the finished pad but, on the bottom left picture, those timber pieces were replaced
+with 3D printed parts. Also note that the design is for an old-style bracketed pad, so it includes measurements for the
+brackets, but those can just be ignored.
 
 {% include
   image.html

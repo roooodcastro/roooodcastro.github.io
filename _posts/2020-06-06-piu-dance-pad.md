@@ -36,13 +36,13 @@ designing, prototyping, building, and most importantly, play testing the pad:
 {% include image.html name="finished_pad.jpg" description="Finished PIU pad" %}
 
 This post is just a high level overview of what the pad is and how it works. You can find more detailed information
-about each of the pad's components here:
+about each of the pad's components and how they were designed and built here:
 
-1. *(TODO) Frame Build and BOM*
-2. *(TODO) Arrow Panels*
-3. *(TODO) Pad Sensors*
-4. *(TODO) LEDs and Electronics*
-5. *(TODO) Arduino Programming*
+* [Part 1 - Frame Build and BOM]({% post_url 2020-06-08-piu-frame-build %})
+* [Part 2 - Arrow Panels]({% post_url 2020-06-08-piu-arrow-panels %})
+* *Part 3 - Pad Sensors (TODO)*
+* *Part 4 - LEDs and Electronics (TODO)*
+* *Part 5 - Arduino Programming (TODO)*
 
 ### Frame
 
