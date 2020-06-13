@@ -12,7 +12,7 @@
 
     <figure class="card mb-3">
       {% if file_ext == 'mp4' %}
-        <video muted autoplay loop>
+        <video muted autoplay loop class="w-100">
           <source src="{{ site.url }}{{ asset_path }}" type="video/mp4">
         </video>
       {% else %}

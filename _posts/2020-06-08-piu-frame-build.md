@@ -38,7 +38,7 @@ You can also jump to any part of the series:</em>
 
 * **Part 1 - Frame Build and BOM**
 * [Part 2 - Arrow Panels]({% post_url 2020-06-08-piu-arrow-panels %})
-* *Part 3 - Pad Sensors (TODO)*
+* [Part 3 - Pad Sensors]({% post_url 2020-06-13-piu-pad-sensors %})
 * *Part 4 - LEDs and Electronics (TODO)*
 * *Part 5 - Arduino Programming (TODO)*
 
