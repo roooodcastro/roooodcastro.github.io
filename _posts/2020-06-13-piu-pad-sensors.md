@@ -35,7 +35,7 @@ know what this is about, check out my [project summary here]({% post_url 2020-06
 You can also jump to any part of the series:</em>
 
 * [Part 1 - Frame Build and BOM]({% post_url 2020-06-08-piu-frame-build %})
-* [Part 1 - Arrow Panels]({% post_url 2020-06-08-piu-arrow-panels %})
+* [Part 2 - Arrow Panels]({% post_url 2020-06-08-piu-arrow-panels %})
 * **Part 3 - Pad Sensors**
 * *Part 4 - LEDs and Electronics (TODO)*
 * *Part 5 - Arduino Programming (TODO)*
