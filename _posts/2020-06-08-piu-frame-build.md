@@ -39,7 +39,7 @@ You can also jump to any part of the series:</em>
 * **Part 1 - Frame Build and BOM**
 * [Part 2 - Arrow Panels]({% post_url 2020-06-08-piu-arrow-panels %})
 * [Part 3 - Pad Sensors]({% post_url 2020-06-13-piu-pad-sensors %})
-* *Part 4 - LEDs and Electronics (TODO)*
+* [Part 4 - LEDs and Electronics]({% post_url 2020-08-21-piu-leds-and-electronics %})
 * *Part 5 - Arduino Programming (TODO)*
 
 ---
@@ -338,18 +338,23 @@ I'm not including the cost of the tools, as I already owned some of them, but I 
 </tbody>
 </table>
 
-#### Plywood and timber cuts:
+#### Plywood and timber measurements:
 
 These are the sizes in which the plywood and timber need to be cut, for a hybrid wood/plastic pad using 42x20mm timber
 and 15mm plywood:
 
-Plywood:
+Plywood for the plates between the step panels:
 
-* 1x 877x877mm
-* 2x 277x159mm
-* 2x 277x279mm
+* 1x 877x877mm (base)
+* 2x 277x159mm (left and right plates)
+* 2x 277x279mm (up and down plates)
 
-Timber:
+Acrylic/Plywood for the step panels:
+
+* 4x 277x337mm (corner arrows)
+* 1x 277x277mm (center step)
+
+Timber for the frame walls:
 
 * 2x 877mm
 * 2x 837mm

@@ -22,6 +22,9 @@ navigation:
   previous:
     label: Arrow Panels
     url: '/blog/2020/06/08/piu-arrow-panels.html'
+  next:
+    label: 'LEDs and Electronics'
+    url: '/blog/2020/08/21/piu-leds-and-electronics.html'
 ---
 
 <p class="d-none">
@@ -37,7 +40,7 @@ You can also jump to any part of the series:</em>
 * [Part 1 - Frame Build and BOM]({% post_url 2020-06-08-piu-frame-build %})
 * [Part 2 - Arrow Panels]({% post_url 2020-06-08-piu-arrow-panels %})
 * **Part 3 - Pad Sensors**
-* *Part 4 - LEDs and Electronics (TODO)*
+* [Part 4 - LEDs and Electronics]({% post_url 2020-08-21-piu-leds-and-electronics %})
 * *Part 5 - Arduino Programming (TODO)*
 
 ---
@@ -165,7 +168,7 @@ The following tools and materials are needed to build one of the sensors:
 * 3D printed sensor body
 * Copper tape
 * JST connector (you can buy pre-crimped connectors)
-* Electrical wire (should be between 24-30AWG, _maybe_ 22AWG will fit, YMMV)
+* Electrical wire (should be between 24-30AWG, *maybe* 22AWG will fit, YMMV)
 * Solder
 * Wire cutter, stripper, and crimper (crimper not needed if you get pre-crimped connectors+cables)
 * Solder iron
@@ -199,11 +202,11 @@ bit, but be careful to not enlarge it too much and end up breaking the part in h
 The bottom half is smaller, thus it needs less copper than the top half. I used a strip of 5cm for the bottom and 6cm
 for the top. This ensures that you end up with an overlap of the tape at the top, making a full loop of copper. This is
 not needed though, as I did it mainly for looks. Actually, if you do this with the 4m roll I mentioned before, you will
-*not* have enough tape to make 40 sensors, as you'd only have 10cm for each, and you'd be using 11cm here. If you're
+**not** have enough tape to make 40 sensors, as you'd only have 10cm for each, and you'd be using 11cm here. If you're
 planning on building two of these, you can instead use just 4.5cm for the bottom and either 5 or 5.5cm for the top
 half.
 
-To apply it, remove the protective film and place it centered *on the contact side of the plate*, like in the picture
+To apply it, remove the protective film and place it centered **on the contact side of the plate**, like in the picture
 below. Then gently wrap it around the edges. With a pointy object, pierce the copper tape where the holes are, so you
 can slide the cables back in later.
 
