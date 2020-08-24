@@ -1,0 +1,17 @@
+.gist {
+  border-radius: 6px;
+  max-height: 300px;
+  overflow-y: auto;
+
+  .gist-file {
+    margin-bottom: 0 !important;
+  }
+
+  .gist-data {
+    background-color: #FAFAFA !important;
+  }
+
+  .highlight {
+    background-color: #FAFAFA !important;
+  }
+}
