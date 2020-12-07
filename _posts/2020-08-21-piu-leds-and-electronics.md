@@ -195,8 +195,19 @@ multimeter to measure the current draw to make sure it'll be safe. My readings a
 * Yellow: 221mA (avg 27.65mA per LED)
 * Blue: 212mA (avg 26.5mA per LED)
 
-The pad has 2 red arrows, 2 blue arrows and 1 yellow "arrow", adding up to a total draw of 1069mA. The next post will
-explain how to configure the LED colours and brightness levels to keep current draw in check.
+The pad has 2 red arrows, 2 blue arrows and 1 yellow "arrow", adding up to a nominal total draw of 1069mA. The actual
+power draw of the whole pad (not only the LEDs) was then measured with a multimeter, using two different power
+sources: a standard phone charger, which should be able to supply up to 2A (2000mA), and the intended USB 3.0 port on
+my laptop. These are the readings I got from each:
+
+* Phone charger: 1030mA
+* USB 3.0: 970mA
+
+This shows that the USB port is indeed limiting the amount of power that the pad receives, but that's still a tad
+above the theoretical limit of the port. I say theoretical as I'm not sure on the specification for that specific port
+on my laptop. Given that the power is being limited, I think it should be safe enough to run the pad with this
+configuration, but again, please keep that limit in mind. The next post will explain how to configure the LED colours
+and brightness levels to keep current draw in check.
 
 {% include
   image.html
